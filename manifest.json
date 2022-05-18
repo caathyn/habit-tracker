@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Panda",
   "version": "1.0",
-  "description": "A little help to stay focused on your dreams.",
+  "description": "Simple Habit Tracker",
   "browser_action": {
     "default_popup": "index.html"
   }

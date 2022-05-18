@@ -1,33 +1,18 @@
 const addBtn = document.getElementById('add-btn')
-const userInput = document.getElementById('todo-input')
-const tasksContainer = document.getElementById('tasks-container')
+const userInput = document.getElementById('add-input')
+const habitContainer = document.getElementById('habits-container')
 
-const addTask = () => {
-  const newTask = document.createElement('span') 
-  newTask.innerHTML = userInput.value
-  newTask.onclick = function() {
-    newTask.classList.add('completed-task')
-  }
+const addHabit = () => {
+  const newHabit = document.createElement('p') 
+  newHabit.innerHTML = userInput.value;
 
-  const deleteButton = document.createElement('button')
-  const deleteIcon = document.createElement('i')
-  deleteIcon.classList.add('far')
-  deleteIcon.classList.add('fa-trash-alt')
-  deleteButton.append(deleteIcon)
-  deleteButton.onclick = function() {
-    this.parentNode.remove();
-  }
-
-  const taskBox = document.createElement('div')
-  taskBox.classList.add('task')
-  taskBox.append(newTask)
-  taskBox.append(deleteButton)
-  tasksContainer.append(taskBox)
+  habitContainer.append(newHabit) 
 
   userInput.value = ''
 }
 
-addBtn.addEventListener('click', addTask)
+addBtn.addEventListener('click', addHabit)
 userInput.addEventListener('keypress', (event) => {
-  if (event.key === 'Enter') addTask();
+  if (event.key === 'Enter') addHabit();
 })
+
