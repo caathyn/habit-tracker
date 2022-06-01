@@ -7,26 +7,50 @@
 body {
   height: 550px;
   width: 750px;
-  background-color: #DEF4FF;
-  border: 1px solid red;
+  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222)); 
 }
- h1 {
-   text-align: center;
-   border: 1px solid green;
- }
 
- #add-input {
-   display: block;
-   margin: auto;
- }
+h1 {
+  text-align: center;
+}
 
- #add-btn {
-   display: block;
-   margin: auto;
- }
+.main-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  height: calc(100% - 3.34em);
+}
 
- .habits-container {
-   border: 1px solid red;
+.headers-container {
+  display: flex;
+}
 
+.spacer {
+  text-align: center;
+}
 
- }
+.days-container {
+  border: 1px solid blue;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+span {
+  /* border: 1px solid yellow; */
+}
+
+.body-container {
+  flex-grow: 1;
+  display: flex;
+}
+
+.spacer, .habits-list {
+  width: 200px;
+}
+
+.tracking-table {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
