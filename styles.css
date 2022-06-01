@@ -27,13 +27,14 @@ h1 {
 
 .spacer {
   text-align: center;
+  border: 1px solid black;
 }
 
 .days-container {
-  border: 1px solid blue;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
+  border: 1px solid black;
 }
 
 span {
@@ -45,7 +46,7 @@ span {
   display: flex;
 }
 
-.spacer, .habits-list {
+.spacer, .sidebar {
   width: 200px;
 }
 
@@ -53,4 +54,17 @@ span {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+
 }
